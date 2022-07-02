@@ -18,13 +18,18 @@ body{
 }
 
 /* Reset styles */
-.link{
+.link {
     text-decoration: none;
     color: currentColor;
 }
 
 .list{
     list-style: none;
+}
+
+/* Hover, Focus  */
+.link:hover, .link:focus {
+    color: var(--special-txt-cl);
 }
 
 /* Header */
@@ -70,10 +75,6 @@ body{
     color: var(--secondary-txt-cl);
 }
 
-.contacts-link:hover, .contacts-link:focus, .addr-link:hover, .addr-link:focus   {
-    color: var(--special-txt-cl);
-}
-
 /* Footer */
 
 .ftr{
@@ -101,3 +102,77 @@ body{
 }
 
 /* Main */
+/* Section with an order button */
+.order{
+    background-color: var(--black-bg-color);
+}
+
+.headline{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.order-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+/* Advantages */
+
+.advnt-list h3 {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advnt-list p{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-cl);
+}
+
+/* Kinds of services */
+
+.title{
+    font-size: 36px;
+    line-height: 1.17px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Team */
+
+.team{
+    background-color: #F5F4FA;
+}
+
+.team h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team p{
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-cl);
+}
+
