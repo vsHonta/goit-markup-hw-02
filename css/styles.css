@@ -28,9 +28,9 @@ body{
 }
 
 /* Hover, Focus  */
-.link:hover, .link:focus {
+/* .link:hover, .link:focus{
     color: var(--special-txt-cl);
-}
+} */
 
 /* Header */
 .logo{
@@ -59,6 +59,11 @@ body{
     color: var(--special-txt-cl);
 }
 
+.nav-link-current:hover,
+.nav-link-current:focus {
+    color: var(--special-txt-cl);
+}
+
 .nav-link{
     font-weight: 500;
     font-size: 14px;
@@ -67,12 +72,22 @@ body{
     color: var(--main-txt-cl);
 }
 
+ .nav-link:hover,
+ .nav-link:focus{
+    color: var(--special-txt-cl);
+ }
+
 .contacts-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-txt-cl);
+}
+
+.contacts-link:hover,
+.contacts-link:focus{
+    color: var(--special-txt-cl);
 }
 
 /* Footer */
@@ -101,6 +116,10 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
+.addr-link:hover{
+    color: var(--special-txt-cl);
+}
+
 /* Main */
 /* Section with an order button */
 .order{
@@ -118,6 +137,7 @@ body{
 }
 
 .order-button {
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -128,6 +148,10 @@ body{
     color: #FFFFFF;
     background: #2196F3;
     cursor: pointer;
+}
+
+.order-button:hover, .order-button:focus {
+    background-color: #188CE8;
 }
 
 /* Advantages */
@@ -176,3 +200,53 @@ body{
     color: var(--secondary-txt-cl);
 }
 
+/*  */
+/* Portfolio */ 
+/*  */
+
+/* Portfolio section buttons */
+.prtf-btn-act {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+.prtf-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--grey-bg-color);
+    cursor: pointer;
+}
+
+.prtf-btn-act:hover, .prtf-btn-act:focus{
+    background-color: #188CE8;
+}
+
+.prtf-btn:hover, .prtf-btn:focus{
+    background-color: var(--special-txt-cl);
+    color: #FFFFFF;
+}
+
+/* Examples of works */
+
+.examples-list h2{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples-list p{
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-cl);
+}
